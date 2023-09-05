@@ -1,6 +1,6 @@
 # CypressThesisE2ETests  
 Cypress project for End to end and UI tests for (https://uniportal.ihu.gr)  
-Node.js is required to run this project. Download node.js here from the official webpage --> (https://nodejs.org/en)  
+Node.js is required to run this project. Download node.js here from the official webpage --> (https://nodejs.org/en)
 ##Note:  
 <u><strong>Tests that require login can not be executed since the password of my credentials is not pushed for security reasons.</strong></u>  
 
