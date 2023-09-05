@@ -2,7 +2,8 @@
 Cypress project for End to end and UI tests for (https://uniportal.ihu.gr)  
 Node.js is required to run this project. Download node.js here from the official webpage --> (https://nodejs.org/en)
 ## Note:  
-🚩<u><strong>Tests that require login can not be executed since the password of my credentials is not pushed for security reasons.</strong></u>  
+⚠️🚩<u><strong>Tests that require login will not be executed after log in, since the password of my credentials is not pushed for security reasons.</strong></u>  
+🚦🚫<u><strong>Test "TC08_Exams_ExamsCalendarΟΚ.cy.js" and "TC9_HamburgerMenuItemsWhenCollapsedΟΚ.cy.js" are failing because of bugs.</strong></u>  
 
 ## Project structure:  
 - **cypress/e2e**  --> All Test Suites and Test Scripts belong in this folder.
