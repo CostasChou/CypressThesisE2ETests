@@ -27,4 +27,6 @@ npx cypress run --headed --browser chrome --spec cypress\e2e\TC01_LogInCorrectUs
 ```bash
 npx cypress open
 ```
-The above will open Cypress app. You can select which Test Suite you want to execute from Cypress app. Last but not least, there are other options available too (e.g. select browser to execute the tests, debug tests, settings, documentation, etc.)
+The above will open Cypress app. You can select which Test Suite you want to execute from Cypress app. Last but not least, there are other options available too (e.g. select browser to execute the tests, debug tests, settings, documentation, etc.). Check screenshot below: 
+![image](https://github.com/CostasChou/CypressThesisE2ETests/assets/97087053/376ccf26-7c1b-4c46-81d0-8d7aebb97f67)
+
