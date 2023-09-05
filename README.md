@@ -16,6 +16,7 @@ Node.js is required to run this project. Download node.js here from the official
 
 
 ## Test execution :rocket:
+⚠️⚠️⚠️ATTENTION! NOT ALL TESTS SHOULD BE EXECUTED PARALLELY! IF TESTS WILL BE EXECUTED PARALLELY IT WILL POSSIBLY AFFECT THE AVAILABILITY OF (https://uniportal.ihu.gr). PLEASE DO NOT EXECUTE MORE THAN 3 TESTS PARALLELY...⚠️⚠️⚠️   
 In the example below tests of "TC01_LogInCorrectUsernameCorrectPasswordOK.cy.js" will be executed in headed more and Chrome browser.
 ```bash
 npx cypress run --headed --browser chrome --spec cypress\e2e\TC01_LogInCorrectUsernameCorrectPasswordOK.cy.js
