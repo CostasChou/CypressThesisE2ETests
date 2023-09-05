@@ -19,4 +19,11 @@ In the example below tests of "TC01_LogInCorrectUsernameCorrectPasswordOK.cy.js"
 ```bash
 npx cypress run --headed --browser chrome --spec cypress\e2e\TC01_LogInCorrectUsernameCorrectPasswordOK.cy.js
 ```
-
+▶︎ More info about execution:  
+- You can choose the browser of the test execution by setting the flag --browser 'to_the_correspodning_browser_name(e.g. Chrome, Edge, FireFox, Electron').
+- Cypress runs tests on headless mode by default. If you want to run tests on headed more you can add this flag too your CLI execution command. E.g. --headed  
+▶︎ Other execution options:
+```bash
+npx cypress open
+```
+The above will open Cypress app. You can select which Test Suite you want to execute from Cypress app. Last but not least, there are other options available too (e.g. select browser to execute the tests, debug tests, settings, documentation, etc.)
