@@ -11,7 +11,7 @@ Node.js is required to run this project. Download node.js here from the official
 - **cypress/reports/index.html**  --> Test execution reports (from mochawesome library) are produced in this file.
 - **cypress/support/commands.js**  --> Custom JavaScript commands that may be used from Test Scripts are included in this file.
 - **cypress/support/e2e.js**  --> Imports are mentioned in this file.
-- **cypress/Webpages**  --> The folder contains all the Webpages that have been used by tests. Each file represents a webpage and contains its corresponding Web - Element Locators, methods to retrieve Web Elements references, methods to perform actions on the Web Elements, and Assertions on the Web Elements.
+- **cypress/Webpages**  --> This folder contains all the Webpages that have been used by tests. Each file represents a webpage and contains its corresponding Web - Element Locators, methods to retrieve Web Elements references, methods to perform actions on the Web Elements, and Assertions on the Web Elements.
 - **nodemodules/cypress.config**  --> This file changes the configuration for the remaining execution of the current spec file. The values will reset to the previous default values after the spec has been completed.  
 
 
