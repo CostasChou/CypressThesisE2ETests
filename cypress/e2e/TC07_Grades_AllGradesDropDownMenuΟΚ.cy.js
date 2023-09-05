@@ -2,12 +2,13 @@ import LogInWebpage from "../Webpages/LogInWebpage.js";
 import Homepage from "../Webpages/Homepage.js";
 import GradesWebpage from "../Webpages/GradesWebpage.js";
 
-
+//Catch uncaught exception thrown by the web app
 Cypress.on('uncaught:exception', () => {
   // Suppress uncaught exceptions globally
   return false;
 });
 
+//Test Suite name
 describe('TC07_Grades_AllGradesDropDownMenuΟΚ', () => {
   Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
@@ -15,6 +16,7 @@ describe('TC07_Grades_AllGradesDropDownMenuΟΚ', () => {
     return false
   })
 
+  //Test name
   it('TC07_Grades_AllGradesDropDownMenuΟΚ', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
       // returning false here prevents Cypress from
@@ -27,6 +29,8 @@ describe('TC07_Grades_AllGradesDropDownMenuΟΚ', () => {
       // failing the test
       return false
     })
+
+    //Execute Test using parameters defined in fixtures folder
     cy.fixture('uniportal').then((data) => {
       Cypress.on('uncaught:exception', (err, runnable) => {
         // returning false here prevents Cypress from
@@ -56,16 +60,12 @@ describe('TC07_Grades_AllGradesDropDownMenuΟΚ', () => {
         // failing the test
         return false
       })
-      // cy.wait(6000);
       homepageObj.verifyAllOptionsOfGradesAreVisible();
       homepageObj.clickAllGradesOptionOfGradesOptionOfCentralMenu();
       const gradesWebpage = new GradesWebpage();
-      // cy.wait(6000);
       gradesWebpage.clickAllOptionOfGradesEntriesDropDownList();
-      // cy.wait(24000);
       gradesWebpage.scrollDownToAllVisibleEntries();
       gradesWebpage.verifyThatAllEntriesAreVisible();
-      // gradesWebpage.verifyAllOptionsOfEntriesDropDownMenu();
     })
   })
 })

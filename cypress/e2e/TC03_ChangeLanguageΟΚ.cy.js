@@ -1,13 +1,13 @@
 import LogInWebpage from "../Webpages/LogInWebpage.js";
 import Homepage from "../Webpages/Homepage.js";
 
-
+//Catch uncaught exception thrown by the web app
 Cypress.on('uncaught:exception', () => {
   // Suppress uncaught exceptions globally
   return false;
 });
 
-
+//Test Suite name
 describe('TC03_ChangeLanguageΟΚ', () => {
   Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
@@ -15,6 +15,7 @@ describe('TC03_ChangeLanguageΟΚ', () => {
     return false
   })
 
+  //Test name
   it('TC03_ChangeLanguageΟΚ', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
       // returning false here prevents Cypress from
@@ -27,6 +28,8 @@ describe('TC03_ChangeLanguageΟΚ', () => {
       // failing the test
       return false
     })
+
+    //Execute Test using parameters defined in fixtures folder
     cy.fixture('uniportal').then((data) => {
       Cypress.on('uncaught:exception', (err, runnable) => {
         // returning false here prevents Cypress from

@@ -1,10 +1,12 @@
 import LogInWebpage from "../Webpages/LogInWebpage.js";
 
+//Catch uncaught exception thrown by the web app
 Cypress.on('uncaught:exception', () => {
   // Suppress uncaught exceptions globally
   return false;
 });
 
+//Test Suite name
 describe('TC12_LogInWithWrongUsernameCorrectPasswordKO', () => {
   Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
@@ -12,6 +14,7 @@ describe('TC12_LogInWithWrongUsernameCorrectPasswordKO', () => {
     return false
   })
 
+  //Test name
   it('TC12_LogInWithWrongUsernameCorrectPasswordKO', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
       // returning false here prevents Cypress from
@@ -24,6 +27,8 @@ describe('TC12_LogInWithWrongUsernameCorrectPasswordKO', () => {
       // failing the test
       return false
     })
+    
+    //Execute Test using parameters defined in fixtures folder
     cy.fixture('uniportal').then((data) => {
       Cypress.on('uncaught:exception', (err, runnable) => {
         // returning false here prevents Cypress from
