@@ -21,7 +21,8 @@ npx cypress run --headed --browser chrome --spec cypress\e2e\TC01_LogInCorrectUs
 ```
 ▶︎ More info about execution:  
 - You can choose the browser of the test execution by setting the flag --browser 'to_the_correspodning_browser_name(e.g. Chrome, Edge, FireFox, Electron').
-- Cypress runs tests on headless mode by default. If you want to run tests on headed more you can add this flag too your CLI execution command. E.g. --headed  
+- Cypress runs tests on headless mode by default. If you want to run tests on headed more you can add this flag too your CLI execution command. E.g. --headed
+  
 ▶︎ Other execution options:
 ```bash
 npx cypress open
